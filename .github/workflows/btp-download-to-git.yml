@@ -23,8 +23,9 @@ on:
         required: true
         type: choice
         options:
-          - ""
-          - ""
+          - "DEV"
+          - "TST"
+          - "PRD"
       mode:
         description: "Mode IntegrationPackages/PartnerDirectory"
         required: true
