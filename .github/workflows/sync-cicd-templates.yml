@@ -79,7 +79,7 @@ jobs:
         with:
           app-id: ${{ vars.GIT_CICD_APP_ID }}
           private-key: ${{ secrets.GIT_CICD_APP_PRIVATE_KEY }}
-          owner: dcsword
+          owner: ${{ steps.cicd-org.outputs.owner }}
 
       - name: Generate GitHub App token — consumer org
         id: app-token-suite
