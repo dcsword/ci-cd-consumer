@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-29T13:18:45Z",
+  "generated": "2026-10-29T15:20:33Z",
   "environments": [
     "DEV",
     "TST"
@@ -45,7 +45,27 @@
               "deploy": "false",
               "logLevel": "INFO",
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.1"
+              "runtimeVersion": "1.0.2"
+            },
+            "TST": {
+              "deploy": "false",
+              "logLevel": "INFO",
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            }
+          }
+        },
+        {
+          "id": "Test_02",
+          "name": "Test 02",
+          "source": "btp",
+          "hasGitConfig": true,
+          "environments": {
+            "DEV": {
+              "deploy": "false",
+              "logLevel": "INFO",
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.3"
             },
             "TST": {
               "deploy": "false",
