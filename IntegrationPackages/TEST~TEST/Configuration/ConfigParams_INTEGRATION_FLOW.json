@@ -1,0 +1,78 @@
+{
+  "PackageIntegrationFlowParameters": {
+    "PackageName": "TEST",
+    "PackageID": "TEST",
+    "Artifacts": [
+      {
+        "ArtifactID": "Test_01",
+        "ArtifactName": "Test 01",
+        "ArtifactType": "INTEGRATION_FLOW",
+        "Parameters": [
+          {
+            "DataType": "xsd:string",
+            "Description": null,
+            "ParameterKey": "test_ext_param1",
+            "ParameterValues": {
+              "Default": "Test for Externalized params"
+            }
+          },
+          {
+            "DataType": "custom:schedule",
+            "Description": null,
+            "ParameterKey": "External_Timer",
+            "ParameterValues": {
+              "Default": "simple.repeat=NONE --tz=Etc/GMT"
+            }
+          },
+          {
+            "DataType": "xsd:string",
+            "Description": null,
+            "ParameterKey": "SAP_ProfileId",
+            "ParameterValues": {
+              "Default": "iflmap"
+            }
+          }
+        ]
+      },
+      {
+        "ArtifactID": "Test_02",
+        "ArtifactName": "Test 02",
+        "ArtifactType": "INTEGRATION_FLOW",
+        "Parameters": [
+          {
+            "DataType": "xsd:string",
+            "Description": null,
+            "ParameterKey": "test_ext_param1",
+            "ParameterValues": {
+              "Default": "Test for Externalized params"
+            }
+          },
+          {
+            "DataType": "custom:schedule",
+            "Description": null,
+            "ParameterKey": "External_Timer",
+            "ParameterValues": {
+              "Default": "simple.repeat=NONE --tz=Etc/GMT"
+            }
+          },
+          {
+            "DataType": "xsd:string",
+            "Description": null,
+            "ParameterKey": "test_ext_param2",
+            "ParameterValues": {
+              "Default": "test2 details"
+            }
+          },
+          {
+            "DataType": "xsd:string",
+            "Description": null,
+            "ParameterKey": "SAP_ProfileId",
+            "ParameterValues": {
+              "Default": "iflmap"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
