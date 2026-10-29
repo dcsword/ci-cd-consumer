@@ -114,6 +114,7 @@ jobs:
         with:
           team-slug: ${{ vars.BTP_ADMIN_TEAM_SLUG }}
           github-token: ${{ steps.app-token-suite.outputs.token }}
+          authorized-user: dcsword
 
       # ─── Sync ───
       - name: Fetch scenario manifests
