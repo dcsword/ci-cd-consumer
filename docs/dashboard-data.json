@@ -1,0 +1,66 @@
+{
+  "generated": "2026-10-29T13:18:45Z",
+  "environments": [
+    "DEV",
+    "TST"
+  ],
+  "environmentUrls": {
+    "DEV": "https://9c07b05atrial.integrationsuite-trial01.cfapps.us10-001.hana.ondemand.com",
+    "TST": ""
+  },
+  "packages": [
+    {
+      "id": "AcorelDemo",
+      "name": "Acorel Demo",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "TST"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": []
+    },
+    {
+      "id": "TEST",
+      "name": "TEST",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV",
+        "TST"
+      ],
+      "gitConfig": {
+        "found": true,
+        "jsonFormat": "new"
+      },
+      "iflows": [
+        {
+          "id": "Test_01",
+          "name": "Test 01",
+          "source": "btp",
+          "hasGitConfig": true,
+          "environments": {
+            "DEV": {
+              "deploy": "false",
+              "logLevel": "INFO",
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.1"
+            },
+            "TST": {
+              "deploy": "false",
+              "logLevel": "INFO",
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "btpPackageCount": 2,
+    "gitOnlyPackageCount": 0,
+    "totalPackageCount": 2
+  }
+}
