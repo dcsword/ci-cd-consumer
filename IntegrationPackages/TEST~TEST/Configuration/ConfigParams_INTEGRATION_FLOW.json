@@ -72,6 +72,21 @@
             }
           }
         ]
+      },
+      {
+        "ArtifactID": "Test_03",
+        "ArtifactName": "Test 03",
+        "ArtifactType": "INTEGRATION_FLOW",
+        "Parameters": [
+          {
+            "DataType": "xsd:string",
+            "Description": null,
+            "ParameterKey": "SAP_ProfileId",
+            "ParameterValues": {
+              "Default": "iflmap"
+            }
+          }
+        ]
       }
     ]
   }

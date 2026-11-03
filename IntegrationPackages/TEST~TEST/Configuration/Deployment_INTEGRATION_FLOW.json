@@ -18,6 +18,14 @@
         "Rank": "100",
         "LogLevel": "INFO",
         "Runtimes": "iflmap"
+      },
+      {
+        "ArtifactID": "Test_03",
+        "ArtifactName": "Test 03",
+        "Deploy": "false",
+        "Rank": "100",
+        "LogLevel": "INFO",
+        "Runtimes": "iflmap"
       }
     ]
   }
