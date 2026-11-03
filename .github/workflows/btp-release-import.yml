@@ -38,9 +38,10 @@ on:
         required: false
         type: choice
         options:
+          - ""
           - "DEV"
-          - "TST"
           - "PRD"
+          - "TST"
 
 permissions:
   contents: write

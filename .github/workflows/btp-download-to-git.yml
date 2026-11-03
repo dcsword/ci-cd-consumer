@@ -25,6 +25,7 @@ on:
         options:
           - ""
           - "DEV"
+          - "PRD"
           - "TST"
       mode:
         description: "Mode IntegrationPackages/PartnerDirectory"

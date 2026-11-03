@@ -22,6 +22,7 @@ on:
         options:
           - ""
           - "DEV"
+          - "PRD"
           - "TST"
       iflow-id:
         description: "IFlow ID"
