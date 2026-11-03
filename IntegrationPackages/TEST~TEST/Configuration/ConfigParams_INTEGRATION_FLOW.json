@@ -14,6 +14,8 @@
             "ParameterKey": "test_ext_param1",
             "ParameterValues": {
               "Default": "Test for Externalized params"
+              "TST": "TEST for test param",
+              "PRD": "Prod for test param"
             }
           },
           {
