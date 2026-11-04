@@ -248,7 +248,7 @@
 <body>
   <div class="header">
     <h1>📊 Integration Suite Dashboard</h1>
-    <div class="meta"><span>📁 <strong>dcsword/ci-cd-consumer</strong></span><span>📅 2026-11-03T05:45:49Z</span><span>🌍 <a href="https://9c07b05atrial.integrationsuite-trial01.cfapps.us10-001.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, TST, PRD</span><span>📦 89 BTP packages</span>
+    <div class="meta"><span>📁 <strong>dcsword/ci-cd-consumer</strong></span><span>📅 2026-11-04T05:16:04Z</span><span>🌍 <a href="https://9c07b05atrial.integrationsuite-trial01.cfapps.us10-001.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, TST, PRD</span><span>📦 89 BTP packages</span>
     </div>
     <div class="scope-note">ℹ️ This dashboard covers Integration Flow (IFlow) artifacts only. Other artifact types (Value Mappings, Script Collections, etc.) are not included.</div>
     <nav class="page-nav">
@@ -284,13 +284,13 @@
           <div class="label">Not on All Environments</div>
         </div>
         <div class="summary-card" data-card-filter="git-issues" onclick="toggleCardFilter('git-issues')">
-          <div class="number">88</div>
+          <div class="number">89</div>
           <div class="label">Git Config Issues</div>
           <div class="sub-label">🔴 88 packages missing entirely</div>
-          <div class="sub-label">⚠️ 0 packages with missing IFlows</div>
+          <div class="sub-label">⚠️ 1 packages with missing IFlows</div>
         </div>
       </div>
-      <div class="alert">⚠️ <strong>Action required:</strong> 88 package(s) and 547 IFlow(s) found on BTP have no Git deployment configuration.</div>
+      <div class="alert">⚠️ <strong>Action required:</strong> 88 package(s) and 548 IFlow(s) found on BTP have no Git deployment configuration.</div>
     </div>
     <div class="filter-bar">
       <input type="text" id="searchInput" placeholder="🔍 Filter by package or IFlow name/ID..." onkeyup="filterDashboard()">
@@ -1121,9 +1121,9 @@
       </div>
     </div>
     <div class="package-section collapsed" data-package="AllianderCompanyInfo Alliander CompanyInfo" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
-      <div class="package-header not-in-git" onclick="togglePackage(this)">
-        <h2><span class="toggle-arrow">▶</span> ❓ 📦 Alliander CompanyInfo (<code class="copyable" onclick="showIdMenu(event,'package','AllianderCompanyInfo','','PRD','Alliander CompanyInfo','false')" title="Click for options">AllianderCompanyInfo</code>)</h2>
-        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> DEV, TST</div>
+      <div class="package-header error" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> 🔴 📦 Alliander CompanyInfo (<code class="copyable" onclick="showIdMenu(event,'package','AllianderCompanyInfo','','PRD','Alliander CompanyInfo','false')" title="Click for options">AllianderCompanyInfo</code>)</h2>
+        <div class="meta"><span class="json-template-link" onclick="showJsonTemplate(event)">Deployment JSON: ⚪ none</span> · 🔴 Some IFlows have runtime ERROR status · 📦 <strong>Not found on:</strong> DEV, TST</div>
       </div>
       <div class="package-body">
       <table>
@@ -1151,12 +1151,12 @@
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
           </tr>
-          <tr class="notingit-row" data-iflow="Event_S4_to_Hana_Cloud_DB_MM_-_Business_Partner_create_sync Event S4 to Hana Cloud DB MM - Business Partner_create sync" data-loglevel="">
-            <td class="iflow-name" title="Event S4 to Hana Cloud DB MM - Business Partner_create sync">❓ Event S4 to Hana Cloud DB MM - Business Partner_create sync</td>
+          <tr class="error-row" data-iflow="Event_S4_to_Hana_Cloud_DB_MM_-_Business_Partner_create_sync Event S4 to Hana Cloud DB MM - Business Partner_create sync" data-loglevel="">
+            <td class="iflow-name" title="Event S4 to Hana Cloud DB MM - Business Partner_create sync">🔴 Event S4 to Hana Cloud DB MM - Business Partner_create sync</td>
             <td class="iflow-id" title="Event_S4_to_Hana_Cloud_DB_MM_-_Business_Partner_create_sync"><code class="copyable" onclick="showIdMenu(event,'iflow','Event_S4_to_Hana_Cloud_DB_MM_-_Business_Partner_create_sync','AllianderCompanyInfo','PRD','','','PRD')" title="Click for options">Event_S4_to_Hana_Cloud_DB_MM_-_Business_Partner_create_sync</code></td>
             <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.22</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">🔴 ERROR v1.0.22</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="ProcessDirect_CompanyInfo_-_Process_BusinessPartner_update_sync ProcessDirect CompanyInfo - Process BusinessPartner_update sync" data-loglevel="">
             <td class="iflow-name" title="ProcessDirect CompanyInfo - Process BusinessPartner_update sync">❓ ProcessDirect CompanyInfo - Process BusinessPartner_update sync</td>
@@ -5987,7 +5987,7 @@
       </table>
       </div>
     </div>
-    <div class="package-section collapsed" data-package="TEST TEST" data-source="btp" data-git-found="true" data-has-nogit-iflows="false" data-missing-envs="false">
+    <div class="package-section collapsed" data-package="TEST TEST" data-source="btp" data-git-found="true" data-has-nogit-iflows="true" data-missing-envs="false">
       <div class="package-header error" onclick="togglePackage(this)">
         <h2><span class="toggle-arrow">▶</span> 🔴 📦 TEST (<code class="copyable" onclick="showIdMenu(event,'package','TEST','','DEV,PRD,TST','TEST','true')" title="Click for options">TEST</code>)</h2>
         <div class="meta"><span class="json-template-link" onclick="showJsonTemplate(event)">Deployment JSON: 🟢 new</span> · 🔴 Config mismatch: deployment config differs from BTP reality</div>
@@ -6014,9 +6014,16 @@
           <tr class="error-row" data-iflow="Test_02 Test 02" data-loglevel="INFO">
             <td class="iflow-name" title="Test 02">🔴 Test 02</td>
             <td class="iflow-id" title="Test_02"><code class="copyable" onclick="showIdMenu(event,'iflow','Test_02','TEST','DEV,TST,PRD','','','DEV')" title="Click for options">Test_02</code></td>
-            <td class="env-cell"><span class="row-item">❌ false</span><span class="row-item">🔵 INFO</span><span class="row-item">✅ STARTED v1.0.3</span></td>
+            <td class="env-cell"><span class="row-item">❌ false</span><span class="row-item">🔵 INFO</span><span class="row-item">✅ STARTED v1.0.4</span></td>
             <td class="env-cell"><span class="row-item">❌ false</span><span class="row-item">🔵 INFO</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-cell"><span class="row-item">❌ false</span><span class="row-item">🔵 INFO</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="Test_03 Test 03" data-loglevel="">
+            <td class="iflow-name" title="Test 03">❓ Test 03</td>
+            <td class="iflow-id" title="Test_03"><code class="copyable" onclick="showIdMenu(event,'iflow','Test_03','TEST','DEV','','','DEV')" title="Click for options">Test_03</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.1</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">—</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">—</span></td>
           </tr>
         </tbody>
       </table>
