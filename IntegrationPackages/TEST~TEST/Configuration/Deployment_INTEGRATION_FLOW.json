@@ -4,6 +4,14 @@
     "PackageID": "TEST",
     "IntegrationFlows": [
       {
+        "ArtifactID": "Test_02",
+        "ArtifactName": "Test 02",
+        "Deploy": "false",
+        "Rank": "100",
+        "LogLevel": "INFO",
+        "Runtimes": "iflmap"
+      },
+      {
         "ArtifactID": "Test_01",
         "ArtifactName": "Test 01",
         "Deploy": "false",
@@ -12,8 +20,8 @@
         "Runtimes": "iflmap"
       },
       {
-        "ArtifactID": "Test_02",
-        "ArtifactName": "Test 02",
+        "ArtifactID": "Test_03",
+        "ArtifactName": "Test 03",
         "Deploy": "false",
         "Rank": "100",
         "LogLevel": "INFO",
