@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09T05:03:52Z",
+  "generated": "2026-11-10T06:23:29Z",
   "environments": [
     "DEV",
     "PRD",
@@ -5969,6 +5969,150 @@
       ]
     },
     {
+      "id": "AllianderEDSNS4U",
+      "name": "Alliander EDSN - S4U - ContractualConnection",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "PRD"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": [
+        {
+          "id": "ProcessDirect_to_BPA_flow_Contractual_Connection",
+          "name": "ED.CA72 ProcessDirect to BPA flow - Contractual Connection Event Create",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "PRD": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "ProcessDirect_to_ProcessDirect_-_Gather_technical_utility_data",
+          "name": "ED.CA73 ProcessDirect to ProcessDirect - Gather Technical Utility Data Sync",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "PRD": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "ED.CA05_ProcessDirect_to_SAP_API_Portal_-_Get_Connection_Data_Sync",
+          "name": "ED.CA75 ProcessDirect to ProcessDirect - Get S4U Technical Masterdata Sync",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "PRD": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "APIM_to_ProcessDirect_-_Get_Technical_Utility_Data_Sync",
+          "name": "ED.CA76 APIM to ProcessDirect - Get Technical Utility Data Sync",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "PRD": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "ED.CA77_ProcessDirect_to_ProcessDirect_-_GetMeteringPoint_Sync_EDSN",
+          "name": "ED.CA77 ProcessDirect to ProcessDirect - GetMeteringPoint Sync EDSN",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "PRD": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "AllianderEDSNS4UConsumptionProcessing",
       "name": "Alliander EDSN - S4U - ConsumptionProcessing",
       "source": "btp",
@@ -10600,7 +10744,7 @@
         },
         {
           "id": "ED.CA01_AEM_to_ProcessDirect_-_Routing_EDSN_events",
-          "name": "ED.CA01 AEM to ProcessDirect - Routing EDSN events",
+          "name": "ED.CA71 AEM to ProcessDirect - Routing EDSN events",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -15556,8 +15700,8 @@
     }
   ],
   "summary": {
-    "btpPackageCount": 89,
+    "btpPackageCount": 90,
     "gitOnlyPackageCount": 0,
-    "totalPackageCount": 89
+    "totalPackageCount": 90
   }
 }

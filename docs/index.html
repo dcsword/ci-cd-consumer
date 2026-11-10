@@ -248,7 +248,7 @@
 <body>
   <div class="header">
     <h1>📊 Integration Suite Dashboard</h1>
-    <div class="meta"><span>📁 <strong>dcsword/ci-cd-consumer</strong></span><span>📅 2026-11-09T05:03:52Z</span><span>🌍 <a href="https://9c07b05atrial.integrationsuite-trial01.cfapps.us10-001.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, TST, PRD</span><span>📦 89 BTP packages</span>
+    <div class="meta"><span>📁 <strong>dcsword/ci-cd-consumer</strong></span><span>📅 2026-11-10T06:23:29Z</span><span>🌍 <a href="https://9c07b05atrial.integrationsuite-trial01.cfapps.us10-001.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, TST, PRD</span><span>📦 90 BTP packages</span>
     </div>
     <div class="scope-note">ℹ️ This dashboard covers Integration Flow (IFlow) artifacts only. Other artifact types (Value Mappings, Script Collections, etc.) are not included.</div>
     <nav class="page-nav">
@@ -276,21 +276,21 @@
       <h2>📈 Summary</h2>
       <div class="summary-grid">
         <div class="summary-card" data-card-filter="btp" onclick="toggleCardFilter('btp')">
-          <div class="number">89</div>
+          <div class="number">90</div>
           <div class="label">BTP Packages</div>
         </div>
         <div class="summary-card" data-card-filter="not-all-envs" onclick="toggleCardFilter('not-all-envs')">
-          <div class="number">88</div>
+          <div class="number">89</div>
           <div class="label">Not on All Environments</div>
         </div>
         <div class="summary-card" data-card-filter="git-issues" onclick="toggleCardFilter('git-issues')">
-          <div class="number">88</div>
+          <div class="number">89</div>
           <div class="label">Git Config Issues</div>
-          <div class="sub-label">🔴 88 packages missing entirely</div>
+          <div class="sub-label">🔴 89 packages missing entirely</div>
           <div class="sub-label">⚠️ 0 packages with missing IFlows</div>
         </div>
       </div>
-      <div class="alert">⚠️ <strong>Action required:</strong> 88 package(s) and 547 IFlow(s) found on BTP have no Git deployment configuration.</div>
+      <div class="alert">⚠️ <strong>Action required:</strong> 89 package(s) and 552 IFlow(s) found on BTP have no Git deployment configuration.</div>
     </div>
     <div class="filter-bar">
       <input type="text" id="searchInput" placeholder="🔍 Filter by package or IFlow name/ID..." onkeyup="filterDashboard()">
@@ -2464,6 +2464,62 @@
       </table>
       </div>
     </div>
+    <div class="package-section collapsed" data-package="AllianderEDSNS4U Alliander EDSN - S4U - ContractualConnection" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
+      <div class="package-header not-in-git" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 Alliander EDSN - S4U - ContractualConnection (<code class="copyable" onclick="showIdMenu(event,'package','AllianderEDSNS4U','','PRD','Alliander EDSN - S4U - ContractualConnection','false')" title="Click for options">AllianderEDSNS4U</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> DEV, TST</div>
+      </div>
+      <div class="package-body">
+      <table>
+        <thead>
+          <tr>
+            <th>IFlow Name</th>
+            <th>IFlow ID</th>
+            <th><a href="https://9c07b05atrial.integrationsuite-trial01.cfapps.us10-001.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">DEV</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+            <th>TST<br><sub>Deploy · LogLevel · Runtime</sub></th>
+            <th>PRD<br><sub>Deploy · LogLevel · Runtime</sub></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="notingit-row" data-iflow="ProcessDirect_to_BPA_flow_Contractual_Connection ED.CA72 ProcessDirect to BPA flow - Contractual Connection Event Create" data-loglevel="">
+            <td class="iflow-name" title="ED.CA72 ProcessDirect to BPA flow - Contractual Connection Event Create">❓ ED.CA72 ProcessDirect to BPA flow - Contractual Connection Event Create</td>
+            <td class="iflow-id" title="ProcessDirect_to_BPA_flow_Contractual_Connection"><code class="copyable" onclick="showIdMenu(event,'iflow','ProcessDirect_to_BPA_flow_Contractual_Connection','AllianderEDSNS4U','PRD','','','')" title="Click for options">ProcessDirect_to_BPA_flow_Contractual_Connection</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="ProcessDirect_to_ProcessDirect_-_Gather_technical_utility_data ED.CA73 ProcessDirect to ProcessDirect - Gather Technical Utility Data Sync" data-loglevel="">
+            <td class="iflow-name" title="ED.CA73 ProcessDirect to ProcessDirect - Gather Technical Utility Data Sync">❓ ED.CA73 ProcessDirect to ProcessDirect - Gather Technical Utility Data Sync</td>
+            <td class="iflow-id" title="ProcessDirect_to_ProcessDirect_-_Gather_technical_utility_data"><code class="copyable" onclick="showIdMenu(event,'iflow','ProcessDirect_to_ProcessDirect_-_Gather_technical_utility_data','AllianderEDSNS4U','PRD','','','')" title="Click for options">ProcessDirect_to_ProcessDirect_-_Gather_technical_utility_data</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="ED.CA05_ProcessDirect_to_SAP_API_Portal_-_Get_Connection_Data_Sync ED.CA75 ProcessDirect to ProcessDirect - Get S4U Technical Masterdata Sync" data-loglevel="">
+            <td class="iflow-name" title="ED.CA75 ProcessDirect to ProcessDirect - Get S4U Technical Masterdata Sync">❓ ED.CA75 ProcessDirect to ProcessDirect - Get S4U Technical Masterdata Sync</td>
+            <td class="iflow-id" title="ED.CA05_ProcessDirect_to_SAP_API_Portal_-_Get_Connection_Data_Sync"><code class="copyable" onclick="showIdMenu(event,'iflow','ED.CA05_ProcessDirect_to_SAP_API_Portal_-_Get_Connection_Data_Sync','AllianderEDSNS4U','PRD','','','')" title="Click for options">ED.CA05_ProcessDirect_to_SAP_API_Portal_-_Get_Connection_Data_Sync</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="APIM_to_ProcessDirect_-_Get_Technical_Utility_Data_Sync ED.CA76 APIM to ProcessDirect - Get Technical Utility Data Sync" data-loglevel="">
+            <td class="iflow-name" title="ED.CA76 APIM to ProcessDirect - Get Technical Utility Data Sync">❓ ED.CA76 APIM to ProcessDirect - Get Technical Utility Data Sync</td>
+            <td class="iflow-id" title="APIM_to_ProcessDirect_-_Get_Technical_Utility_Data_Sync"><code class="copyable" onclick="showIdMenu(event,'iflow','APIM_to_ProcessDirect_-_Get_Technical_Utility_Data_Sync','AllianderEDSNS4U','PRD','','','')" title="Click for options">APIM_to_ProcessDirect_-_Get_Technical_Utility_Data_Sync</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="ED.CA77_ProcessDirect_to_ProcessDirect_-_GetMeteringPoint_Sync_EDSN ED.CA77 ProcessDirect to ProcessDirect - GetMeteringPoint Sync EDSN" data-loglevel="">
+            <td class="iflow-name" title="ED.CA77 ProcessDirect to ProcessDirect - GetMeteringPoint Sync EDSN">❓ ED.CA77 ProcessDirect to ProcessDirect - GetMeteringPoint Sync EDSN</td>
+            <td class="iflow-id" title="ED.CA77_ProcessDirect_to_ProcessDirect_-_GetMeteringPoint_Sync_EDSN"><code class="copyable" onclick="showIdMenu(event,'iflow','ED.CA77_ProcessDirect_to_ProcessDirect_-_GetMeteringPoint_Sync_EDSN','AllianderEDSNS4U','PRD','','','')" title="Click for options">ED.CA77_ProcessDirect_to_ProcessDirect_-_GetMeteringPoint_Sync_EDSN</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
     <div class="package-section collapsed" data-package="AllianderEDSNS4UConsumptionProcessing Alliander EDSN - S4U - ConsumptionProcessing" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
       <div class="package-header not-in-git" onclick="togglePackage(this)">
         <h2><span class="toggle-arrow">▶</span> ❓ 📦 Alliander EDSN - S4U - ConsumptionProcessing (<code class="copyable" onclick="showIdMenu(event,'package','AllianderEDSNS4UConsumptionProcessing','','PRD','Alliander EDSN - S4U - ConsumptionProcessing','false')" title="Click for options">AllianderEDSNS4UConsumptionProcessing</code>)</h2>
@@ -4224,8 +4280,8 @@
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
           </tr>
-          <tr class="notingit-row" data-iflow="ED.CA01_AEM_to_ProcessDirect_-_Routing_EDSN_events ED.CA01 AEM to ProcessDirect - Routing EDSN events" data-loglevel="">
-            <td class="iflow-name" title="ED.CA01 AEM to ProcessDirect - Routing EDSN events">❓ ED.CA01 AEM to ProcessDirect - Routing EDSN events</td>
+          <tr class="notingit-row" data-iflow="ED.CA01_AEM_to_ProcessDirect_-_Routing_EDSN_events ED.CA71 AEM to ProcessDirect - Routing EDSN events" data-loglevel="">
+            <td class="iflow-name" title="ED.CA71 AEM to ProcessDirect - Routing EDSN events">❓ ED.CA71 AEM to ProcessDirect - Routing EDSN events</td>
             <td class="iflow-id" title="ED.CA01_AEM_to_ProcessDirect_-_Routing_EDSN_events"><code class="copyable" onclick="showIdMenu(event,'iflow','ED.CA01_AEM_to_ProcessDirect_-_Routing_EDSN_events','AllianderS4UCommonFunctionalities','PRD','','','')" title="Click for options">ED.CA01_AEM_to_ProcessDirect_-_Routing_EDSN_events</code></td>
             <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
