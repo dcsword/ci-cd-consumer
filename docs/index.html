@@ -248,7 +248,7 @@
 <body>
   <div class="header">
     <h1>📊 Integration Suite Dashboard</h1>
-    <div class="meta"><span>📁 <strong>dcsword/ci-cd-consumer</strong></span><span>📅 2026-11-10T06:23:29Z</span><span>🌍 <a href="https://9c07b05atrial.integrationsuite-trial01.cfapps.us10-001.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, TST, PRD</span><span>📦 90 BTP packages</span>
+    <div class="meta"><span>📁 <strong>dcsword/ci-cd-consumer</strong></span><span>📅 2026-11-11T05:07:59Z</span><span>🌍 <a href="https://9c07b05atrial.integrationsuite-trial01.cfapps.us10-001.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, TST, PRD</span><span>📦 91 BTP packages</span>
     </div>
     <div class="scope-note">ℹ️ This dashboard covers Integration Flow (IFlow) artifacts only. Other artifact types (Value Mappings, Script Collections, etc.) are not included.</div>
     <nav class="page-nav">
@@ -276,21 +276,21 @@
       <h2>📈 Summary</h2>
       <div class="summary-grid">
         <div class="summary-card" data-card-filter="btp" onclick="toggleCardFilter('btp')">
-          <div class="number">90</div>
+          <div class="number">91</div>
           <div class="label">BTP Packages</div>
         </div>
         <div class="summary-card" data-card-filter="not-all-envs" onclick="toggleCardFilter('not-all-envs')">
-          <div class="number">89</div>
+          <div class="number">90</div>
           <div class="label">Not on All Environments</div>
         </div>
         <div class="summary-card" data-card-filter="git-issues" onclick="toggleCardFilter('git-issues')">
-          <div class="number">89</div>
+          <div class="number">90</div>
           <div class="label">Git Config Issues</div>
-          <div class="sub-label">🔴 89 packages missing entirely</div>
+          <div class="sub-label">🔴 90 packages missing entirely</div>
           <div class="sub-label">⚠️ 0 packages with missing IFlows</div>
         </div>
       </div>
-      <div class="alert">⚠️ <strong>Action required:</strong> 89 package(s) and 552 IFlow(s) found on BTP have no Git deployment configuration.</div>
+      <div class="alert">⚠️ <strong>Action required:</strong> 90 package(s) and 556 IFlow(s) found on BTP have no Git deployment configuration.</div>
     </div>
     <div class="filter-bar">
       <input type="text" id="searchInput" placeholder="🔍 Filter by package or IFlow name/ID..." onkeyup="filterDashboard()">
@@ -2547,6 +2547,55 @@
           <tr class="notingit-row" data-iflow="ED.CA21_b_ProcessDirect_to_CAP_Application ED.CA21 Single Item ProcessDirect to SAP API Portal CAP Application" data-loglevel="">
             <td class="iflow-name" title="ED.CA21 Single Item ProcessDirect to SAP API Portal CAP Application">❓ ED.CA21 Single Item ProcessDirect to SAP API Portal CAP Application</td>
             <td class="iflow-id" title="ED.CA21_b_ProcessDirect_to_CAP_Application"><code class="copyable" onclick="showIdMenu(event,'iflow','ED.CA21_b_ProcessDirect_to_CAP_Application','AllianderEDSNS4UConsumptionProcessing','PRD','','','')" title="Click for options">ED.CA21_b_ProcessDirect_to_CAP_Application</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="package-section collapsed" data-package="AllianderEDSNS4UModifygascapacity Alliander EDSN - S4U - Modify gas capacity" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
+      <div class="package-header not-in-git" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 Alliander EDSN - S4U - Modify gas capacity (<code class="copyable" onclick="showIdMenu(event,'package','AllianderEDSNS4UModifygascapacity','','PRD','Alliander EDSN - S4U - Modify gas capacity','false')" title="Click for options">AllianderEDSNS4UModifygascapacity</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> DEV, TST</div>
+      </div>
+      <div class="package-body">
+      <table>
+        <thead>
+          <tr>
+            <th>IFlow Name</th>
+            <th>IFlow ID</th>
+            <th><a href="https://9c07b05atrial.integrationsuite-trial01.cfapps.us10-001.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">DEV</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+            <th>TST<br><sub>Deploy · LogLevel · Runtime</sub></th>
+            <th>PRD<br><sub>Deploy · LogLevel · Runtime</sub></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="notingit-row" data-iflow="ED.AR71_EDSN_SOAP_to_AEM_Topic_and_SAP_ERP_-_InvoiceDataMasterdataMeterNotification_Sync ED.AR71 EDSN SOAP to AEM Topic and SAP ERP - InvoiceDataMasterdataMeterNotification Sync" data-loglevel="">
+            <td class="iflow-name" title="ED.AR71 EDSN SOAP to AEM Topic and SAP ERP - InvoiceDataMasterdataMeterNotification Sync">❓ ED.AR71 EDSN SOAP to AEM Topic and SAP ERP - InvoiceDataMasterdataMeterNotification Sync</td>
+            <td class="iflow-id" title="ED.AR71_EDSN_SOAP_to_AEM_Topic_and_SAP_ERP_-_InvoiceDataMasterdataMeterNotification_Sync"><code class="copyable" onclick="showIdMenu(event,'iflow','ED.AR71_EDSN_SOAP_to_AEM_Topic_and_SAP_ERP_-_InvoiceDataMasterdataMeterNotification_Sync','AllianderEDSNS4UModifygascapacity','PRD','','','')" title="Click for options">ED.AR71_EDSN_SOAP_to_AEM_Topic_and_SAP_ERP_-_InvoiceDataMasterdataMeterNotification_Sync</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="ED.AR72_ProcessDirect_to_BPA_flow_-_Modify_Gas_Capacity_Event_Create ED.AR72 ProcessDirect to BPA flow - Modify Gas Capacity Event Create" data-loglevel="">
+            <td class="iflow-name" title="ED.AR72 ProcessDirect to BPA flow - Modify Gas Capacity Event Create">❓ ED.AR72 ProcessDirect to BPA flow - Modify Gas Capacity Event Create</td>
+            <td class="iflow-id" title="ED.AR72_ProcessDirect_to_BPA_flow_-_Modify_Gas_Capacity_Event_Create"><code class="copyable" onclick="showIdMenu(event,'iflow','ED.AR72_ProcessDirect_to_BPA_flow_-_Modify_Gas_Capacity_Event_Create','AllianderEDSNS4UModifygascapacity','PRD','','','')" title="Click for options">ED.AR72_ProcessDirect_to_BPA_flow_-_Modify_Gas_Capacity_Event_Create</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="ED.AR73_ProcessDirect_to_ProcessDirect_-_Gather_Gas_Capacity_Data_Sync ED.AR73 ProcessDirect to ProcessDirect - Gather Gas Capacity Data Sync" data-loglevel="">
+            <td class="iflow-name" title="ED.AR73 ProcessDirect to ProcessDirect - Gather Gas Capacity Data Sync">❓ ED.AR73 ProcessDirect to ProcessDirect - Gather Gas Capacity Data Sync</td>
+            <td class="iflow-id" title="ED.AR73_ProcessDirect_to_ProcessDirect_-_Gather_Gas_Capacity_Data_Sync"><code class="copyable" onclick="showIdMenu(event,'iflow','ED.AR73_ProcessDirect_to_ProcessDirect_-_Gather_Gas_Capacity_Data_Sync','AllianderEDSNS4UModifygascapacity','PRD','','','')" title="Click for options">ED.AR73_ProcessDirect_to_ProcessDirect_-_Gather_Gas_Capacity_Data_Sync</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="ED.AR76_APIM_to_ProcessDirect_-_Get_Gas_Capacity_Data_Sync ED.AR76 APIM to ProcessDirect - Get Gas Capacity Data Sync" data-loglevel="">
+            <td class="iflow-name" title="ED.AR76 APIM to ProcessDirect - Get Gas Capacity Data Sync">❓ ED.AR76 APIM to ProcessDirect - Get Gas Capacity Data Sync</td>
+            <td class="iflow-id" title="ED.AR76_APIM_to_ProcessDirect_-_Get_Gas_Capacity_Data_Sync"><code class="copyable" onclick="showIdMenu(event,'iflow','ED.AR76_APIM_to_ProcessDirect_-_Get_Gas_Capacity_Data_Sync','AllianderEDSNS4UModifygascapacity','PRD','','','')" title="Click for options">ED.AR76_APIM_to_ProcessDirect_-_Get_Gas_Capacity_Data_Sync</code></td>
             <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-10T06:23:29Z",
+  "generated": "2026-11-11T05:07:59Z",
   "environments": [
     "DEV",
     "PRD",
@@ -6153,6 +6153,124 @@
         {
           "id": "ED.CA21_b_ProcessDirect_to_CAP_Application",
           "name": "ED.CA21 Single Item ProcessDirect to SAP API Portal CAP Application",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "PRD": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "AllianderEDSNS4UModifygascapacity",
+      "name": "Alliander EDSN - S4U - Modify gas capacity",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "PRD"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": [
+        {
+          "id": "ED.AR71_EDSN_SOAP_to_AEM_Topic_and_SAP_ERP_-_InvoiceDataMasterdataMeterNotification_Sync",
+          "name": "ED.AR71 EDSN SOAP to AEM Topic and SAP ERP - InvoiceDataMasterdataMeterNotification Sync",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "PRD": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "ED.AR72_ProcessDirect_to_BPA_flow_-_Modify_Gas_Capacity_Event_Create",
+          "name": "ED.AR72 ProcessDirect to BPA flow - Modify Gas Capacity Event Create",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "PRD": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "ED.AR73_ProcessDirect_to_ProcessDirect_-_Gather_Gas_Capacity_Data_Sync",
+          "name": "ED.AR73 ProcessDirect to ProcessDirect - Gather Gas Capacity Data Sync",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            },
+            "PRD": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "ED.AR76_APIM_to_ProcessDirect_-_Get_Gas_Capacity_Data_Sync",
+          "name": "ED.AR76 APIM to ProcessDirect - Get Gas Capacity Data Sync",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -15700,8 +15818,8 @@
     }
   ],
   "summary": {
-    "btpPackageCount": 90,
+    "btpPackageCount": 91,
     "gitOnlyPackageCount": 0,
-    "totalPackageCount": 90
+    "totalPackageCount": 91
   }
 }
