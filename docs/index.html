@@ -248,7 +248,7 @@
 <body>
   <div class="header">
     <h1>📊 Integration Suite Dashboard</h1>
-    <div class="meta"><span>📁 <strong>dcsword/ci-cd-consumer</strong></span><span>📅 2026-11-11T05:07:59Z</span><span>🌍 <a href="https://9c07b05atrial.integrationsuite-trial01.cfapps.us10-001.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, TST, PRD</span><span>📦 91 BTP packages</span>
+    <div class="meta"><span>📁 <strong>dcsword/ci-cd-consumer</strong></span><span>📅 2026-11-12T06:08:18Z</span><span>🌍 <a href="https://9c07b05atrial.integrationsuite-trial01.cfapps.us10-001.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, TST, PRD</span><span>📦 92 BTP packages</span>
     </div>
     <div class="scope-note">ℹ️ This dashboard covers Integration Flow (IFlow) artifacts only. Other artifact types (Value Mappings, Script Collections, etc.) are not included.</div>
     <nav class="page-nav">
@@ -276,21 +276,21 @@
       <h2>📈 Summary</h2>
       <div class="summary-grid">
         <div class="summary-card" data-card-filter="btp" onclick="toggleCardFilter('btp')">
-          <div class="number">91</div>
+          <div class="number">92</div>
           <div class="label">BTP Packages</div>
         </div>
         <div class="summary-card" data-card-filter="not-all-envs" onclick="toggleCardFilter('not-all-envs')">
-          <div class="number">90</div>
+          <div class="number">91</div>
           <div class="label">Not on All Environments</div>
         </div>
         <div class="summary-card" data-card-filter="git-issues" onclick="toggleCardFilter('git-issues')">
-          <div class="number">90</div>
+          <div class="number">91</div>
           <div class="label">Git Config Issues</div>
-          <div class="sub-label">🔴 90 packages missing entirely</div>
+          <div class="sub-label">🔴 91 packages missing entirely</div>
           <div class="sub-label">⚠️ 0 packages with missing IFlows</div>
         </div>
       </div>
-      <div class="alert">⚠️ <strong>Action required:</strong> 90 package(s) and 556 IFlow(s) found on BTP have no Git deployment configuration.</div>
+      <div class="alert">⚠️ <strong>Action required:</strong> 91 package(s) and 557 IFlow(s) found on BTP have no Git deployment configuration.</div>
     </div>
     <div class="filter-bar">
       <input type="text" id="searchInput" placeholder="🔍 Filter by package or IFlow name/ID..." onkeyup="filterDashboard()">
@@ -4836,6 +4836,34 @@
           <tr class="notingit-row" data-iflow="TG.SA01_ScheduledTimer_to_Terugleveren_GZ_to_SAP_HANA_-_Status_Aanvragen_Async TG.SA01 ScheduledTimer to Terugleveren GZ to SAP HANA - Status Aanvragen Async" data-loglevel="">
             <td class="iflow-name" title="TG.SA01 ScheduledTimer to Terugleveren GZ to SAP HANA - Status Aanvragen Async">❓ TG.SA01 ScheduledTimer to Terugleveren GZ to SAP HANA - Status Aanvragen Async</td>
             <td class="iflow-id" title="TG.SA01_ScheduledTimer_to_Terugleveren_GZ_to_SAP_HANA_-_Status_Aanvragen_Async"><code class="copyable" onclick="showIdMenu(event,'iflow','TG.SA01_ScheduledTimer_to_Terugleveren_GZ_to_SAP_HANA_-_Status_Aanvragen_Async','AllianderTerugleverenGZ','PRD','','','')" title="Click for options">TG.SA01_ScheduledTimer_to_Terugleveren_GZ_to_SAP_HANA_-_Status_Aanvragen_Async</code></td>
+            <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="package-section collapsed" data-package="AllianderTimeWriting Alliander TimeWriting" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
+      <div class="package-header not-in-git" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 Alliander TimeWriting (<code class="copyable" onclick="showIdMenu(event,'package','AllianderTimeWriting','','PRD','Alliander TimeWriting','false')" title="Click for options">AllianderTimeWriting</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> DEV, TST</div>
+      </div>
+      <div class="package-body">
+      <table>
+        <thead>
+          <tr>
+            <th>IFlow Name</th>
+            <th>IFlow ID</th>
+            <th><a href="https://9c07b05atrial.integrationsuite-trial01.cfapps.us10-001.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">DEV</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+            <th>TST<br><sub>Deploy · LogLevel · Runtime</sub></th>
+            <th>PRD<br><sub>Deploy · LogLevel · Runtime</sub></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="notingit-row" data-iflow="S4_to_Mail_Incomplete_Timesheets_Notification S4 to Mail Incomplete Timesheets Notification" data-loglevel="">
+            <td class="iflow-name" title="S4 to Mail Incomplete Timesheets Notification">❓ S4 to Mail Incomplete Timesheets Notification</td>
+            <td class="iflow-id" title="S4_to_Mail_Incomplete_Timesheets_Notification"><code class="copyable" onclick="showIdMenu(event,'iflow','S4_to_Mail_Incomplete_Timesheets_Notification','AllianderTimeWriting','PRD','','','')" title="Click for options">S4_to_Mail_Incomplete_Timesheets_Notification</code></td>
             <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
