@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-12T06:08:18Z",
+  "generated": "2026-11-13T05:33:22Z",
   "environments": [
     "DEV",
     "PRD",
@@ -1951,7 +1951,7 @@
             "PRD": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "STARTED",
+              "runtimeStatus": "ERROR",
               "runtimeVersion": "1.0.22"
             },
             "TST": {
