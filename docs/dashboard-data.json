@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-16T05:15:34Z",
+  "generated": "2026-11-17T07:00:12Z",
   "environments": [
     "DEV",
     "PRD",
@@ -14471,6 +14471,19 @@
       ]
     },
     {
+      "id": "S4ODATAPI",
+      "name": "S/4 Odata APIs",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "PRD"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": []
+    },
+    {
       "id": "SAPCommerceCloudIntegrationwithSAPS4HANACloud",
       "name": "SAP Commerce Cloud Integration with SAP S/4HANA Cloud",
       "source": "btp",
@@ -15858,8 +15871,8 @@
     }
   ],
   "summary": {
-    "btpPackageCount": 92,
+    "btpPackageCount": 93,
     "gitOnlyPackageCount": 0,
-    "totalPackageCount": 92
+    "totalPackageCount": 93
   }
 }
